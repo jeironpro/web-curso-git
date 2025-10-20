@@ -1,3 +1,25 @@
+header {
+    justify-content: space-between;
+}
+
+header .contenedor-principal-anterior {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    background-color: #000;
+    border-radius: 50%;
+    color: #f34f29;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: #333;
+}
+
 .contenedor-git {
     align-items: center;
     display: flex;

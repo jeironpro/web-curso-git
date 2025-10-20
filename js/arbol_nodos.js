@@ -145,11 +145,11 @@ agregarNodo("rightStash", "Git stash", 5, "right", "centerCommit", "");
 agregarNodo("rightDiff", "Git diff", 5, "right", "rightStash", "");
 agregarNodo("rightPull", "Git pull", 6, "right", "centerCommit", "");
 agregarNodo("rightPush", "Git push", 6, "right", "rightPull", "");
-agregarNodo("rightFetch", "Git fetch", 7, "right", "rightPull", "");
+agregarNodo("rightTag", "Git tag", 7, "right", "rightPush", "");
+agregarNodo("centerFetch", "Git fetch", 7, "center", "rightPull", "");
 agregarNodo("leftReset", "Git reset", 7, "left", "centerCommit", "");
 agregarNodo("leftRevert", "Git revert", 8, "left", "leftReset", "");
 agregarNodo("centerBisect", "Git bisect", 9, "center", "leftRevert", "");
-agregarNodo("rightTag", "Git tag", 7, "right", "centerCommit", "");
 agregarNodo("centerBranch", "Git branch", 6, "center", "centerInit", "");
 agregarNodo("rightCheckout", "Git checkout", 8, "right", "centerBranch", "");
 agregarNodo("rightSwitch", "Git switch", 8, "right", "rightCheckout", "");
@@ -160,7 +160,6 @@ agregarNodo("centerGc", "Git gc", 7, "center", "centerInit", "");
 agregarNodo("centerArchive", "Git archive", 8, "center", "centerInit", "");
 agregarNodo("centerSubmodule", "Git submodule", 9, "center", "centerInit", "");
 agregarNodo("centerPruebaFinal", "Prueba final", 10, "center", "centerInit", "");
-
 
 function espaciadoArbolFooter() {
     // Espaciado entre el arbol y el footer
@@ -175,7 +174,6 @@ function espaciadoArbolFooter() {
 
     arbol.style.height = `${espacioMainFooter + 50}px`;
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
     renderizarArbol();

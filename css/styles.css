@@ -2,7 +2,7 @@ html, body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
-    /* user-select: none; */
+    user-select: none;
 }
 
 body {
@@ -17,24 +17,10 @@ header {
     display: flex;
     height: 80px;
     justify-content: center;
+    padding: 0 10px;
     position: sticky;
     top: 0;
     z-index: 2;
-}
-
-header a {
-    background-color: #000;
-    border-radius: 50%;
-    color: #f34f29;
-    display: flex;
-    left: 15px;
-    padding: 10px;
-    position: absolute;
-    text-decoration: none;
-}
-
-header a:hover {
-    background-color: #333;
 }
 
 main {
