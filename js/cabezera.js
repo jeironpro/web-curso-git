@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const ruta = [
-        "primeropasos",
+        "primerospasos",
         "gitinit",
         "gitremote",
         "gitconfig",
@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "gitclone",
         "gitpull",
         "gitfetch",
+        "pruebafinal"
     ];
 
     const cabeza = document.querySelector("head");
@@ -81,5 +82,19 @@ document.addEventListener("DOMContentLoaded", () => {
     botonSiguiente.appendChild(iconoBotonSiguiente);
 
     titulo.insertAdjacentElement("beforebegin", contenedorPrincipalAnterior);
-    titulo.insertAdjacentElement("afterend", botonSiguiente);
+    titulo.insertAdjacentElement("afterend", botonSiguiente); 
+
+    const paginaActual = window.location.pathname.split("/").pop().replace(".html", "");
+    const indice = ruta.indexOf(paginaActual);
+
+    if (indice == 0) {
+        botonAnterior.href = `./${ruta[ruta.length -1]}.html`;
+        botonSiguiente.href = `./${ruta[indice + 1]}.html`;
+    } else if (indice == ruta.length -1) {
+        botonAnterior.href = `./${ruta[indice -1]}.html`;
+        botonSiguiente.href = `./${ruta[0]}.html`;
+    } else {
+        botonAnterior.href = `./${ruta[indice -1]}.html`;
+        botonSiguiente.href = `./${ruta[indice +1]}.html`;
+    }
 });
