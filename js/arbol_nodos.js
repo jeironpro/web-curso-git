@@ -9,8 +9,7 @@ const espaciado = 200;
 
 // Función para renderizar nodos dinámicamente
 function renderizarArbol() {
-    // Limpiar árbol antes de volver a renderizar
-    arbolObj.innerHTML = "";
+    arbolObj.replaceChildren();
 
     const niveles = {};
     nodosData.forEach(nodo => {
@@ -178,4 +177,14 @@ function espaciadoArbolFooter() {
 document.addEventListener("DOMContentLoaded", () => {
     renderizarArbol();
     espaciadoArbolFooter();
+
+    // Redibujar al cambiar tamaño de ventana
+    let timeout;
+    window.addEventListener("resize", () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            renderizarArbol();
+            espaciadoArbolFooter();
+        }, 100);
+    });
 });

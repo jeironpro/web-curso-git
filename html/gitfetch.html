@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="../icons/curso_git.png" type="image/x-icon">
     <title>Git fetch</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/git.css">
 </head>
 <body>
@@ -49,16 +48,19 @@
             <article class="iteracion">
                 <div class="bloque-ejecutar">
                     <h3><span class="material-symbols-outlined icon-ejecutar">terminal</span> Ejecutar</h3>
-                    <pre><code></code></pre>
+                    <pre><code>$ git fetch origin</code></pre>
                 </div>
                 <div class="bloque-resultado">
                     <h3><span class="material-symbols-outlined icon-resultado">insights</span> Resultado</h3>
-                    <pre><code></code></pre>
+                    <pre><code>remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 957 bytes | 957.00 KiB/s, done.
+From github.com:usuario/mi-proyecto
+   a1b2c3d..e4f5g6h  main       -> origin/main</code></pre>
                 </div>
-                <div class="bloque-ejercicio">
-                    <h3><span class="material-symbols-outlined">task</span>Ejercicio</h3>
-                    <a href="../ejercicios/" download>Ejercicio git fetch (click aquí)</a>
-                </div>
+
             </article>
         </section>
     </main>
