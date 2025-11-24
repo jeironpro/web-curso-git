@@ -532,16 +532,15 @@ article:hover {
     font-weight: bold;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
-    background: var(--bg-card);
-    border-top: 1px solid var(--border);
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    padding: var(--space-xl) var(--space-lg);
-    position: relative;
+    background: var(--text-primary);
+    border-top: 3px solid var(--primary);
+    color: var(--bg-primary);
+    font-size: 18px;
+    font-weight: 600;
+    padding: var(--space-xl);
     text-align: center;
-    width: 100%;
 }
 
 /* RESPONSIVE DESIGN */
@@ -715,6 +714,10 @@ footer {
     pre {
         font-size: 0.9rem;
     }
+
+    footer {
+        font-size: 12px;
+    }
 }
 
 /* Large Mobile (600px - 667px) */
@@ -813,7 +816,8 @@ footer {
     }
 
     footer {
-        font-size: 0.7rem;
+        font-size: 14px;
+        padding: 24px;
     }
 }
 
