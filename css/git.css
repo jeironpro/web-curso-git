@@ -617,10 +617,6 @@ footer {
     .iteracion pre code {
         padding-top: var(--space-xl);
     }
-
-    footer {
-        font-size: 0.4rem;
-    }
 }
 
 /* Small Mobile (375px - 479px) */
@@ -673,10 +669,6 @@ footer {
 
     pre {
         font-size: 0.85rem;
-    }
-
-    footer {
-        font-size: 0.5rem;
     }
 }
 
