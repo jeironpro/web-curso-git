@@ -617,6 +617,10 @@ footer {
     .iteracion pre code {
         padding-top: var(--space-xl);
     }
+
+    footer {
+        font-size: 0.4rem;
+    }
 }
 
 /* Small Mobile (375px - 479px) */
@@ -669,6 +673,10 @@ footer {
 
     pre {
         font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.5rem;
     }
 }
 
@@ -744,6 +752,10 @@ footer {
     article {
         padding: var(--space-xl);
     }
+
+    footer {
+        font-size: 0.6rem;
+    }
 }
 
 /* Small Tablet (668px - 767px) */
@@ -802,6 +814,10 @@ footer {
         display: grid;
         gap: var(--space-2xl);
         grid-template-columns: 1fr;
+    }
+
+    footer {
+        font-size: 0.7rem;
     }
 }
 
